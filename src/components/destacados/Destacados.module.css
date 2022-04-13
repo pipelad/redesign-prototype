@@ -1,0 +1,74 @@
+.destacados-background {
+	padding: 2rem;
+	padding-top: 7rem;
+	margin-top: -7rem;
+	z-index: -1;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.destacados-title {
+	margin: 2rem 0;
+	font-size: 4rem;
+	width: 78%;
+	text-align: center;
+}
+
+.menu-estado {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+	margin-bottom: 2rem;
+	opacity: 0;
+}
+
+.search {
+	width: 78%;
+}
+.menu-estado.visible {
+	opacity: 1;
+}
+.menu-estado.visible  button {
+	opacity: 0;
+}
+.menu-estado.visible  button {
+	animation: estadointro 1s ease-in-out forwards;
+}
+.menu-estado.visible  button:nth-child(1){ 
+	animation-delay: 600ms;
+}
+.menu-estado.visible  button:nth-child(2){ 
+	animation-delay: 400ms;
+}
+.menu-estado.visible  button:nth-child(3){ 
+	animation-delay: 200ms;
+}
+
+@keyframes estadointro {
+	0% {
+		transform: translateX(-10rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.destacados-background {
+		padding: 6rem 1rem 1rem 1rem;
+	}
+	.menu-estado {
+		grid-gap: .5rem;
+		grid-template-columns: 1fr;
+	}
+	.destacados-title{
+		font-size: 3rem;
+		width: 70%;
+	}
+	.search{
+		width: 100%;
+	}
+}

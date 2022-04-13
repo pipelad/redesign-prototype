@@ -1,0 +1,59 @@
+.oferta-academica {
+	display: inline-block;
+	padding-bottom: 7rem;
+	position: relative;
+}
+
+.programas {
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 3rem;
+	animation: programasFadeup 1s ease-in-out forwards;
+}
+
+h2.titulo {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+}
+
+.note {
+	padding: 1rem 3rem;
+	font-style: italic;
+}
+
+.puntos-start {
+	position: absolute;
+	top: 5rem;
+	left: 1rem;
+	width: 20rem;
+	opacity: .5;
+}
+
+.puntos-end {
+	position: absolute;
+	bottom: 8rem;
+	right: 1rem;
+	width: 20rem;
+	opacity: .5;
+}
+
+@keyframes programasFadeup {
+	0% {
+		transform: translateY(5rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 100;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.programas {
+		padding: 1rem;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+	}
+}

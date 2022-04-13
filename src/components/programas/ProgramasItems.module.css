@@ -1,0 +1,72 @@
+.programa {
+	background-color: var(--color-blanco);
+	overflow: hidden;
+}
+
+.titulo {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	text-align: center;
+	padding: .8rem;
+	text-transform: uppercase;
+	background-color: var(--color-azul);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8ch;
+}
+
+.titulo a {
+	color: var(--color-blanco);
+}
+
+.imagen {
+width: 100%;
+}
+
+.imagen img {
+	width: 100%;
+}
+
+.info {
+	width: 100%;
+	padding: .5rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	font-size: 1.3rem;
+}
+
+.facultad {
+	font-size: 1.6rem;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	margin-bottom: .8rem;
+}
+
+.snies, .valor {
+	color: rgb(100,100,100);
+}
+
+.leer-mas {
+	width: 100%;
+	padding: .5rem;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.leer-mas a {
+	text-transform: uppercase;
+	padding: .8rem 2.5rem;
+	background-color: var(--color-azul);
+	color: var(--color-blanco);
+}
+
+.leer-mas a:hover,
+.leer-mas a:focus {
+	background-color: var(--color-amarillo);
+	color: var(--color-negro);
+}

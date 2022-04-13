@@ -1,0 +1,36 @@
+.burbuja {
+	padding: 3rem 1rem 3rem 1rem;
+	width: 37.2rem;
+	height: 12.1rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.burbuja span{
+	display: inline-block;
+}
+
+@media screen and (orientation:portrait) {
+	.burbuja {
+		width: 100%;
+		height: max-content;
+		padding: 0;
+		padding-top: 32.5%;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	.burbuja span{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

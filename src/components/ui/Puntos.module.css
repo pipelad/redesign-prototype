@@ -1,0 +1,15 @@
+.azul svg {
+	fill: var(--color-azul);
+}
+
+.gris svg {
+	fill: var(--color-gris);
+}
+
+.amarillo svg {
+	fill: var(--color-amarillo);
+}
+
+.rojo svg {
+	fill: var(--color-rojo);
+}

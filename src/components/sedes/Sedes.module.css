@@ -1,0 +1,25 @@
+.sedes-seccion {
+	background-color: var(--color-gris);
+	display: inline-block;
+	width: 100%;
+}
+
+.sedes-seccion h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.sedes {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 2rem;
+	padding: 2rem 6rem;
+}
+
+@media screen and (orientation:portrait) {
+	.sedes {
+		padding: 1rem .5rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

@@ -1,0 +1,106 @@
+.destacado-button {
+	background-color: var(--color-blanco);
+	display: grid;
+	grid-template-columns: max-content 1fr max-content;
+	position: relative;
+	overflow: hidden;
+}
+
+.destacado-button:before {
+	content: '';
+	height: 1rem;
+	width: 1rem;
+	background-color: var(--color-azul);
+	transform: scale(1);
+	top: -5rem;
+	left: -5rem;
+	position: absolute;
+	z-index: -1;
+	border-radius: 50%;
+}
+
+.destacado-button:hover,
+.destacado-button:focus {
+	color: var(--color-blanco);
+}
+
+.destacado-button:hover:before, 
+.destacado-button:focus:before {
+	animation: destacado-hover 700ms ease-in-out forwards;
+}
+
+.intro-img {
+	background-color: var(--color-blanco);
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+}
+
+.text {
+	grid-column: 2 / span 2;
+	grid-row: 1 / span 1;
+	display: flex;
+	margin: auto 1rem;
+	text-transform: uppercase;
+}
+
+.new {
+	grid-column: 3 / span 1;
+	grid-row: 1 / span 1;
+}
+
+@keyframes destacado-hover {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(200);
+	}
+}
+
+.simple-link {
+	background-color: var(--color-azul);
+	color: var(--color-blanco);
+	text-align: center;
+	padding: .8rem .5rem;
+}
+
+.simple-link:hover,
+.simple-link:focus {
+	background-color: var(--color-amarillo);
+	color: var(--color-negro);
+}
+
+.span-2 {
+	grid-column: span 2;
+	background-color: var(--color-amarillo);
+	color: var(--color-negro);
+}
+
+.span-2:hover,
+.span-2:focus {
+	background-color: var(--color-negro);
+	color: var(--color-amarillo);
+}
+
+.text-nuevo {
+	display: inline-block;
+}
+
+@media screen and (orientation:portrait) {
+	.intro-img img {
+		width: 4rem;
+	}
+	.text {
+		font-size: 1rem;
+	}
+	img.new {
+		width: 4rem;
+	}
+	.simple-link {
+		font-size: 1.2rem;
+	}
+	.text-nuevo {
+		width: 50%;
+	}
+}
+

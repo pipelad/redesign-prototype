@@ -1,0 +1,28 @@
+.banner-home {
+	width: 94%;
+	margin: 2rem 3%;
+	padding: .8rem;
+	background-color: var(--color-blanco);
+	display: block;
+	min-height: 31vh;
+}
+
+.banner-wrap {
+	overflow-x: hidden;
+}
+
+.banner-wrap div {
+	width: 100%;
+	display: flex;
+	transition: margin 1s ease;
+}
+
+.banner-wrap img {
+	width: 100%;
+}
+
+@media screen and (orientation:portrait) {
+	.banner-home {
+		min-height: 1vh;
+	}
+}

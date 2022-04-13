@@ -1,0 +1,70 @@
+.rapido-logos {
+	background-color: var(--color-gris);
+	width: 100%;
+	display: inline-block;
+}
+
+.rapido {
+	background-attachment: fixed, scroll;
+	background-size: 100% auto;
+	margin: 4rem 0;
+}
+
+.overlay {
+	padding: 15rem 0rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: rgba(0,0,0,0.65);
+}
+
+.content {
+	color: var(--color-blanco);
+	text-align: center;
+}
+
+.rapido-title {
+	font-size: 6rem;
+	color: var(--color-blanco);
+	letter-spacing: 0.3rem;
+	margin-bottom: 1.5rem;
+}
+
+.rapido-texto {
+	font-size: 2.7rem;
+	margin-bottom: 2rem;
+}
+
+a.button {
+	display: inline-block;
+	font-size: 3rem;
+	padding: 1rem 2rem;
+	background-color: var(--color-amarillo);
+	color: var(--color-negro);
+}
+
+a.button:hover,
+a.button:focus {
+	background-color: var(--color-negro);
+	color: var(--color-amarillo);
+}
+
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 15rem;
+}
+
+@media screen and (orientation:portrait) {
+	.rapido {
+		background-size: auto 100%;
+		background-position: center;
+	}
+	.logos {
+		width: 90%;
+		margin-left: 5%;
+		padding-bottom: 10rem;
+	}
+}

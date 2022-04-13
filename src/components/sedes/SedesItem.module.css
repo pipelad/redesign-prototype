@@ -1,0 +1,48 @@
+.sede-item {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;
+}
+.sede-item img {
+	width: 100%;
+}
+.sede-item svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	fill:var(--color-azul);
+}
+
+.title {
+	left: 0;
+	bottom: 8.2%;
+	width: 100%;
+	position: absolute;
+	z-index: 11;
+	color: var(--color-blanco);	
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: var(--color-azul);
+	padding: 1rem 0rem;
+}
+
+.sede-item:hover svg,
+.sede-item:focus svg {
+	fill: var(--color-amarillo);
+}
+
+.sede-item:hover .title,
+.sede-item:focus .title {
+	color: var(--colo-negro);
+	background-color: var(--color-amarillo);
+}
+
+@media screen and (orientation:portrait) {
+	.title {
+		font-size: 1.2rem;
+		padding: .7rem .2rem;
+	}
+}

@@ -1,0 +1,18 @@
+.social-media {
+	display: flex;
+}
+.social-media a {
+	display: inline-block;
+	width: 2rem;
+	margin-left: 2rem;
+}
+.social-media a svg {
+	width: 100%;
+	fill: var(--color-blanco);
+}
+
+@media screen and (orientation:portrait) {
+	.social-media a:first-child {
+		margin-left: 0rem;
+	}
+}
